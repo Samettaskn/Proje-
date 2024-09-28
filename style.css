@@ -1,0 +1,169 @@
+/* Yazı tipi ve renk gibi genel stilleri tüm elementleri kapsayan body elementine aktarır */
+body {
+  font-family: sans-serif;
+  color: #444;
+  border: 5px solid #000;
+  margin-left: 1px;
+}
+
+h2,
+p:nth-child(3),
+h3 {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: red;
+}
+
+h1 {
+  font-size: 28px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* Sayfanın ortasında yer alıyor ve gri bir renkte */
+h2 {
+  font-size: 42px;
+  background: #d3d3d3;
+  text-align: center;
+}
+
+/* Font büyüklüğü 32px olacak */
+p:nth-child(2) {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Rengi açık gri kalın ve 12px puntolu hale gelecek */
+p:nth-child(3) {
+  color: #a9a9a9;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Linklerin varsayılan stilini değiştirerek içi boş yuvarlaklar haline gelmesini sağlar */
+ul {
+  list-style: circle;
+}
+
+/* Linkin üzerine gelindiğinde alttaki çizgi kaybolacak */
+section a:hover {
+  text-decoration: none;
+}
+
+/* Linke tıklama anında rengi yeşil olacak */
+section a:active {
+  color: #0f0;
+}
+
+/* Link varsayılan olarak yeşil renkte oldu */
+section a:link {
+  color: #006400;
+}
+
+/* Link ziyaret edildiği zaman kırmızıya dönecek */
+section a:visited {
+  color: #f00;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* Ebeveyn (Parent) içindeki çift sıra numaralı çocuk öğeleri seçer */
+li:nth-child(even) {
+  color: blue;
+}
+
+/* Ebeveyn (Parent) içindeki tek sıra numaralı çocuk öğeleri seçer. */
+li:nth-child(odd) {
+  color: green;
+}
+
+/* Link varsayılan olarak yeşil bir renkte olacak */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+/* Ziyaret ediceğimiz linkler kırmızı olacak */
+a:visited {
+  color: red;
+}
+
+:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Linklerin üzerine geldiğimizde koyu turuncu olacak */
+a:hover {
+  color: orange;
+  font-weight: 700;
+}
+
+/* Linklere tıkladığımızda rengi gri olacak */
+a:active {
+  color: #444;
+}
+
+#copyright {
+  font-size: 12px;
+}
+
+/* Footer alanındaki link */
+#footerLink {
+  color: red;
+}
+
+.ingredients {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.relatedPosts {
+  list-style: none;
+}
+
+header {
+  background: #f2f2f2;
+}
+
+.relatedPostsContainer {
+  border-top: 5px double #ffb84d;
+  border-bottom: 5px double #ffb84d;
+  background: #f2f2f2;
+}
+
+/* Stiller belirlendi */
+button {
+  font-size: 23px;
+  background: #ffa500;
+  border: none;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Üzerine gelindiğinde arka plan rengi beyaza iç yazı rengi turuncuya dönüşecek fare imleci ise pointer olarak değişecek */
+button:hover {
+  background: #fff;
+  color: #ffa500;
+  cursor: pointer;
+}
