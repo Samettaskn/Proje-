@@ -4,6 +4,7 @@ body {
   color: #444;
   border: 5px solid #000;
   margin-left: 1px;
+  margin-right: 1px;
 }
 
 h2,
@@ -20,7 +21,7 @@ h4 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 20px;
   font-style: italic;
   text-transform: uppercase;
 }
@@ -34,21 +35,27 @@ h2 {
 
 /* Font büyüklüğü 32px olacak */
 p:nth-child(2) {
-  font-size: 32px;
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 14px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
+}
+
+.my-class {
+  color: black !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
 }
 
 /* Rengi açık gri kalın ve 12px puntolu hale gelecek */
@@ -75,7 +82,7 @@ section a:active {
 
 /* Link varsayılan olarak yeşil renkte oldu */
 section a:link {
-  color: #006400;
+  color: blue;
 }
 
 /* Link ziyaret edildiği zaman kırmızıya dönecek */
@@ -84,17 +91,17 @@ section a:visited {
 }
 
 li {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Ebeveyn (Parent) içindeki çift sıra numaralı çocuk öğeleri seçer */
 li:nth-child(even) {
-  color: blue;
+  color: red;
 }
 
 /* Ebeveyn (Parent) içindeki tek sıra numaralı çocuk öğeleri seçer. */
 li:nth-child(odd) {
-  color: green;
+  color: black;
 }
 
 /* Link varsayılan olarak yeşil bir renkte olacak */
@@ -106,11 +113,6 @@ a:link {
 /* Ziyaret ediceğimiz linkler kırmızı olacak */
 a:visited {
   color: red;
-}
-
-:hover {
-  color: orange;
-  font-weight: bold;
 }
 
 /* Linklerin üzerine geldiğimizde koyu turuncu olacak */
@@ -126,6 +128,7 @@ a:active {
 
 #copyright {
   font-size: 12px;
+  text-align: center;
 }
 
 /* Footer alanındaki link */
